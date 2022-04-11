@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'Georgia';
-    src: url("assets/fonts/georgia/georgia-regular.ttf");
+    src: url("../../assets/fonts/georgia/georgia-regular.ttf");
     font-weight: 400;
   }
 
   @font-face {
     font-family: 'Arial';
-    src: url("assets/fonts/arial/arial-regular.ttf");
+    src: url("../../assets/fonts/arial/arial-regular.ttf");
     font-weight: 400;
   }
 
@@ -15,12 +15,208 @@
   }
 
   body {
-    background-color: url("assets/images/start-screen-background.jpg");
     margin: 0;
   }
   
   .container {
-      width: 1200px;
-      margin: 0 auto;
-      padding: 0 80px;
+      max-width: 1280px;
+      margin: auto;
+    }
+
+    .container-header {
+        background: url("../../assets/images/background.jpg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+        display: flex;
+        background-repeat: no-repeat;
+        background-position: center 0;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 60px 40px;
+    }
+
+    .container-logo {
+        display:flex;
+        flex-direction:column;
+    }
+
+    .logo-title {
+        transition: 0.3s;
+        cursor: pointer;
+        font-family: 'Georgia';
+        font-style: normal;
+        letter-spacing: 0.06em;
+        font-weight: 400;
+        font-size: 32px;
+        color: #F1CDB3;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .logo-subtitle {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+        align-self:flex-end;
+        justify-self:flex-start;
+        margin: 0;
+    }
+  
+    .logo-title:hover {
+      transition: .3s;
+      color: #FFFFFF;
+    }
+
+    .nav {
+        margin-left: auto;
+      }
+
+      .nav-list {
+        display: flex;
+        box-sizing: border-box;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+        padding-left: 30px;
+        gap: 35px;
+      }
+    
+      .nav-link {
+        text-decoration: none;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color:#CDCDCD;
+        transition: color .3s;
+      }
+    
+      .nav-link:hover, .nav-link:focus, nav-link:active {
+          transition: .3s;
+          color: #FAFAFA;
+          text-decoration: underline;
+      }
+
+      .container-main {
+        background: url("../../assets/images/background.jpg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+        padding: 0 40px;
+      }
+
+      .section-shelter-main {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .shelter-main-container {
+          margin-right: 42px;
+      }
+
+      .shelter-slogan {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 44px;
+        color: #FFFFFF;
+        width: 310px;
+        line-height: 130%;
+        margin-top: 163px;
+        margin-bottom: 42px;
+      }
+
+      .shelter-slogan-desc{
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        color: #CDCDCD;
+        width: 460px;
+        line-height: 160%;
+        margin-top: 0;
+        margin-bottom: 42px;
+      }
+
+      .colored-btn {
+        height: 52px;
+        width: 207px;
+        left: 0%;
+        right: 56%;
+        top: 275px;
+        background: #F1CDB3;
+        border-radius: 100px;
+        border: none;
+        cursor: pointer; 
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 40px; 
+        transition: color .3s;
+    }
+
+    .colored-btn:hover, .colored-btn:focus, .colored-btn:active {
+        transition: .3s;
+        background: #FDDCC4;
+        cursor: pointer;
+    }
+
+    .shelter-img-container {
+        align-self: flex-end;
+        width: 698px;
+        height: 728px;
+        background: url(../../assets/images/start-screen-puppy.png);
+    }
+
+    .shelter-desc-container-main {
+        display: flex;
+        margin: 80px 40px 100px;
+        justify-content: center;
+        gap: 120px;
+        
+    }
+
+    .shelter-img-desc-container {
+        align-self: center;
+    }
+
+    .about-pets {
+        width: 300px;
+        height: 408px;
+    }
+
+    .shelter-desc-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .shelter-desc-title {
+        width: 370px;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        color: #545454;
+        margin: 0;
+    }
+
+    .shelter-desc-text {
+        width: 430px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+        color: #4C4C4C;
+        margin: 0;
     }
