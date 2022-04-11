@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Georgia';
+    src: url("assets/fonts/georgia/georgia-regular.ttf");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Arial';
+    src: url("assets/fonts/arial/arial-regular.ttf");
+    font-weight: 400;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: url("assets/images/start-screen-background.jpg");
+    margin: 0;
+  }
+  
+  .container {
+      width: 1200px;
+      margin: 0 auto;
+      padding: 0 80px;
+    }
