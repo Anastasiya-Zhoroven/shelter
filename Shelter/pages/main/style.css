@@ -163,6 +163,7 @@
         transition: color .3s;
         padding: 15px 45px;
         text-decoration: none;
+        color: #292929;
     }
 
     .colored-btn:hover, .colored-btn:focus, .colored-btn:active, .colored-btn:visited{
