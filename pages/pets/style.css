@@ -219,6 +219,7 @@
         font-weight: 400; 
         transition: color .3s;
         text-decoration: none;
+        color: #292929;
     }
 
     .colored-btn-pag:hover, .colored-btn-pag:focus, .colored-btn-pag:active, .colored-btn:visited{
