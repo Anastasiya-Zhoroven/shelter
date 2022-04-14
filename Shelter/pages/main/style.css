@@ -109,6 +109,10 @@
         color: #FAFAFA;
       }
 
+      .current-page {
+          border-bottom: 3px solid #F1CDB3;
+      } 
+
       .container-main {
         background: url("../../assets/images/background.jpg");
         background-repeat: no-repeat;
@@ -147,7 +151,7 @@
         width: 460px;
         line-height: 160%;
         margin-top: 0;
-        margin-bottom: 42px;
+        margin-bottom: 57px;
       }
 
       .colored-btn {
@@ -160,6 +164,7 @@
         font-size: 17px;
         line-height: 130%;
         font-weight: 400; 
+        letter-spacing: 0.06em;
         transition: color .3s;
         padding: 15px 45px;
         text-decoration: none;
@@ -323,7 +328,7 @@
     .uncolored-btn-pag:hover, .uncolored-btn-pag:focus, .uncolored-btn-pag:active {
         transition: .3s;
         background: #FDDCC4;
-        cursor: pointer;
+        cursor: default;
         border: 0;
     }
 
@@ -435,6 +440,14 @@
         line-height: 115%;
         letter-spacing: 0.06em;
         color: #545454;
+        text-decoration: none;
+    }
+
+    .donation-card-area:hover, .donation-card-area:active, .donation-card-area:focus{
+        transition: .3s;
+        background: #FDDCC4;
+        cursor: pointer;
+        color: #292929;
     }
 
     .legal-info {

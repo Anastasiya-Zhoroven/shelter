@@ -48,6 +48,7 @@
         color: #545454;
         margin-top: 0;
         margin-bottom: 10px;
+        text-decoration: none;
     }
 
     .logo-subtitle {
@@ -102,6 +103,10 @@
         transition: .3s;
         color: #292929;
       }
+
+      .current-page {
+        border-bottom: 3px solid #F1CDB3;
+    } 
 
       .section-shelter-pets {
         background: #F6F6F6;
@@ -201,7 +206,7 @@
     .uncolored-btn-pag:hover, .uncolored-btn-pag:focus, .uncolored-btn-pag:active {
         transition: .3s;
         background: #FDDCC4;
-        cursor: pointer;
+        cursor: default;
         border: 0;
     }
 
@@ -211,7 +216,7 @@
         background: #F1CDB3;
         border-radius: 100px;
         border: none;
-        cursor: pointer; 
+        cursor: default; 
         font-family: Georgia;
         font-style: normal;
         font-size: 17px;
@@ -222,13 +227,7 @@
         color: #292929;
     }
 
-    .colored-btn-pag:hover, .colored-btn-pag:focus, .colored-btn-pag:active, .colored-btn:visited{
-        transition: .3s;
-        background: #FDDCC4;
-        cursor: pointer;
-        color: #292929;
-    }
-
+   
     .uncolored-btn-pag:disabled,
     .uncolored-btn-pag[disabled]{
         border: 2px solid #CDCDCD;
