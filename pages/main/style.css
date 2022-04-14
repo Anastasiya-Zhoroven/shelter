@@ -170,8 +170,8 @@
         text-decoration: none;
         color: #292929;
     }
-
-    .colored-btn:hover, .colored-btn:focus, .colored-btn:active, .colored-btn:visited{
+    
+    .colored-btn:hover, .colored-btn:focus, .colored-btn:active {
         transition: .3s;
         background: #FDDCC4;
         cursor: pointer;
@@ -291,6 +291,8 @@
 
     .pets:hover {
         box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+        background: #FFFFFF;
+        cursor: pointer;
     }
 
     .uncolored-btn {
@@ -308,6 +310,7 @@
         color: #292929;
     }
 
+    .pets:hover .uncolored-btn,
     .uncolored-btn:hover, .uncolored-btn:focus, .uncolored-btn:active {
         transition: .3s;
         background: #FDDCC4;
@@ -332,7 +335,7 @@
     .uncolored-btn-pag:hover, .uncolored-btn-pag:focus, .uncolored-btn-pag:active {
         transition: .3s;
         background: #FDDCC4;
-        cursor: default;
+        cursor: pointer;
         border: 0;
     }
 
