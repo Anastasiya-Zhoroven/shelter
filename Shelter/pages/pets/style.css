@@ -167,6 +167,10 @@
         margin-bottom: 30px;
     }
 
+    .pets:hover {
+        box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    }
+
     .uncolored-btn {
         width: 187px;
         height: 52px;
@@ -206,7 +210,7 @@
     .uncolored-btn-pag:hover, .uncolored-btn-pag:focus, .uncolored-btn-pag:active {
         transition: .3s;
         background: #FDDCC4;
-        cursor: default;
+        cursor: pointer;
         border: 0;
     }
 
@@ -232,12 +236,14 @@
     .uncolored-btn-pag[disabled]{
         border: 2px solid #CDCDCD;
         color: #CDCDCD;
+        cursor: default;
     }      
     
     .uncolored-btn-pag[disabled]:hover, .uncolored-btn-pag[disabled]:focus, .uncolored-btn-pag[disabled]:active {
         border: 2px solid #CDCDCD;
         color: #CDCDCD;
         background: transparent;
+        cursor: default;
     }
 
     .pets-container {
