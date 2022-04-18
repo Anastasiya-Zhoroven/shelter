@@ -197,11 +197,6 @@
         align-self: center;
     }
 
-    .about-pets {
-        width: 300px;
-        height: 408px;
-    }
-
     .shelter-desc-container {
         display: flex;
         flex-direction: column;
@@ -246,7 +241,7 @@
 
     .section-title {
         height: 90px;
-        width: 400px;
+        max-width: 400px;
         font-family: 'Georgia';
         font-style: normal;
         font-weight: 400;
@@ -414,6 +409,12 @@
         text-align: left;
     }
 
+    .donation-img-container {
+        background: url(../../assets/images/donation-dog.png);
+        width: 505px;
+        height: 261px;
+    }
+
     .donation-card-label {
         font-family: 'Georgia';
         font-style: normal;
@@ -478,12 +479,21 @@
         padding: 40px 40px 0;
     }
 
+    .footer-contacts-and-locations {
+        display: flex;
+        gap: 160px;
+    }
+
     .footer-contacts,
     .footer-locations {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 40px;
+    }
+
+    .footer-locations {
+        gap: 33px;
     }
 
     .footer-title {
@@ -511,6 +521,125 @@
         display: flex;
         align-items: center;
         gap: 20px;
+
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1279px) {
+
+        header {
+            height: 150px;
+        }
+
+        .container-header {
+            padding: 30px 30px 60px;
+        }
+
+        .section-shelter-main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 100px;
+          }
+    
+          .container-main {
+            background-position: center 0;
+            padding: auto calc(50%-569px/2);
+            justify-content: center;
+            align-items: center;
+          }
+
+          .shelter-main-container {
+            margin-right: 0;
+        }
+
+          .shelter-slogan {
+            margin-top: 0;
+          }
+
+          .shelter-slogan-desc {
+            margin-bottom: 42px;
+          }
+
+          .shelter-img-container {
+            width: 569px;
+            height: 593px;
+            background: url(../../assets/images/start-screen-puppy_768.png);
+            margin-left: calc(50% - 569px/2 + 70px);
+            align-self: auto;
+        }
+
+        .shelter-desc-container-main {
+            display: flex;
+            flex-direction: column-reverse;
+            margin: 80px calc(50% - 437px/2 - 0.5px) 100px;
+            justify-content: center;
+            gap: 80px;
+            align-items: center;
+            
+        }
+
+        .shelter-main-container .colored-btn {
+            width: 207px;
+            display: block;
+            text-align: center;
+            padding: 15px 0;
+            margin: auto;
+        }
+    
+        .shelter-img-desc-container {
+            justify-self: center;
+            background: url(../../assets/images/about-pets.png);
+            width: 300px;
+            height: 408px;  
+        }
+
+        .our-pets {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .our-pets {
+            gap: 12px;
+        }
+
+        .pets-container {
+            gap: 40px;
+        }
+
+        .pets:last-child {
+            display: none;
+        }
+
+        .uncolored-btn-pag {
+            padding: calc(23px/2) 19px;
+        }
+
+        .help-container {
+            column-gap: unset;
+        }
+
+        .item-help-container {
+            flex: 0 0 33.33%;
+        }
+
+        .shelter-donation-container {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .footer-container {
+            flex-direction: column;
+            gap: 65px;
+            align-items: center;
+            padding: 30px 64px 0;
+        }
+
+        .footer-contacts-and-locations {
+            gap: 60px;
+        }
+
+
 
     }
 
