@@ -194,7 +194,10 @@
     }
 
     .shelter-img-desc-container {
-        align-self: center;
+        justify-self: center;
+        background: url(../../assets/images/about-pets.png);
+        width: 300px;
+        height: 408px;  
     }
 
     .shelter-desc-container {
@@ -396,6 +399,7 @@
         justify-content: center;
         gap: 30px;  
         padding: 80px 40px 100px;
+        align-items: center;
     }
 
     .donation-info-container {
@@ -474,7 +478,6 @@
         background-size: cover;
         display: flex;
         background-position: center 0;
-        align-items: center;
         justify-content: space-between;
         padding: 40px 40px 0;
     }
@@ -490,6 +493,7 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 40px;
+        margin-top: 16px;
     }
 
     .footer-locations {
@@ -585,13 +589,6 @@
             padding: 15px 0;
             margin: auto;
         }
-    
-        .shelter-img-desc-container {
-            justify-self: center;
-            background: url(../../assets/images/about-pets.png);
-            width: 300px;
-            height: 408px;  
-        }
 
         .our-pets {
             justify-content: center;
@@ -629,15 +626,22 @@
         }
 
         .footer-container {
-            flex-direction: column;
-            gap: 65px;
             align-items: center;
             padding: 30px 64px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 60px;
+            row-gap: 65px;
         }
 
         .footer-contacts-and-locations {
             gap: 60px;
         }
+
+        .footer-contacts,
+        .footer-locations {
+             margin-top: 0;
+    }
 
 
 
