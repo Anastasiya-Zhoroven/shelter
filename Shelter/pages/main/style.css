@@ -528,7 +528,7 @@
 
     }
 
-    @media only screen and (min-width: 768px) and (max-width: 1279px) {
+    @media only screen and (max-width: 1279px) {
 
         header {
             height: 150px;
@@ -643,9 +643,206 @@
              margin-top: 0;
     }
 
+    }
+
+    @media only screen and (max-width: 767px) {
+
+        .nav {
+            display: none;
+        }
+
+        header {
+            height: 150px;
+        }
+
+        .container-header {
+            padding: 30px 10px 60px 53px;
+        }
+
+        .section-shelter-main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 105px;
+          }
+    
+          .container-main {
+            background-position: center 0;
+            padding: 0 10px;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .shelter-main-container {
+            margin-right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 42px;
+        }
+
+          .shelter-slogan {
+            width: 200px;
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 0;
+          }
+
+          .shelter-slogan-desc {
+            margin-bottom: 0;
+            max-width: 460px;
+            font-size: 15px;
+            overflow-wrap:break-word;
+            width: auto;
+            text-align: center;
+          }
+
+          .shelter-img-container {
+            width: 260px;
+            height: 271.77px;
+            background: url(../../assets/images/start-screen-puppy_320.png);
+            margin-left: 13.33%;
+            align-self: auto;
+        }
+
+        .shelter-desc-container-main {
+            padding: 42px 10px;
+            margin: 0;
+        }
+
+        .shelter-desc-container {
+            align-items: center;
+        }
+
+        .shelter-desc-title {
+            width: auto;
+            max-width: 250px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .shelter-desc-text {
+            width: auto;
+            max-width: 430px;
+            text-align: justify;
+            line-height: 160%;
+            letter-spacing: 0;
+            padding: 0 15px;
+        }
+
+        .pets:nth-last-child(2) {
+            display: none;
+        }
+
+        .our-pets {
+            flex-wrap: wrap;
+            row-gap: 20px;
+            column-gap: 60px;
+        }
+
+        .pets-container {
+            order: -1;
+            flex-basis: 100%;
+            justify-content: center;
+        }
+
+        .section-title {
+            font-size: 25px;
+            text-align: center;
+            height: auto;
+        }
+
+        .shelter-pets-container-main {
+            gap: 42px;
+            padding: 42px 10px;
+
+        }
+
+        .shelter-help-container {
+            padding: 42px 10px;
+            gap: 42px;
+        }
+
+        .help-container {
+            gap: 30px;
+            justify-content: flex-start;
+        }
+
+        .item-help-container {
+            flex: 0 0 calc(50% - 30px/2);
+            gap: 20px;
+
+        }
+
+        .help-item-title {
+            font-size: 15px;
+            line-height: 110%;
+        }
+
+        .donation-img-container {
+            background: url(../../assets/images/donation-dog_320.png);
+            width: 260px;
+            height: 135.2px;
+        }
+
+        .shelter-donation-container {
+            padding: 42px 10px;
+            gap: 42px;
+        }
+
+        .legal-info {
+            max-width: 380px;
+            width: auto;
+            text-align: justify;
+            padding: 0 10px;
+        }
+
+        .donation-info-container {
+            align-items: center;
+        }
+
+        .donation-card-label {
+            font-size: 15px;
+            letter-spacing: 0;
+        }
+
+        .card-number {
+            font-size: 15px;
+        }
+
+        .footer-container {
+            padding: 30px 10px 0;
+            row-gap: 40px;
+            column-gap: 0;
+            flex-direction: column;
+        }
+
+        .footer-contacts,
+        .footer-locations {
+            align-items: center;
+        }
+
+        footer .section-title br {
+            display: none;
+        }
+
+        .footer-title {
+            max-width: 250px;
+        }
+
+        .footer-locations {
+            gap: 40px;
+        }
+
+        .footer-info-container {
+            align-self: start;
+        }
 
 
     }
+
+
 
 
 
