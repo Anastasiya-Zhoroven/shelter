@@ -528,6 +528,10 @@
 
     }
 
+    .footer-puppy-img-small {
+        display: none;
+    }
+
     @media only screen and (max-width: 1279px) {
 
         header {
@@ -687,6 +691,8 @@
             font-size: 25px;
             text-align: center;
             margin-bottom: 0;
+            letter-spacing: 0.06em;
+            height: 64px;
           }
 
           .shelter-slogan-desc {
@@ -709,10 +715,17 @@
         .shelter-desc-container-main {
             padding: 42px 10px;
             margin: 0;
+            gap: 42px;
         }
 
         .shelter-desc-container {
             align-items: center;
+        }
+
+        .shelter-img-desc-container {
+            background: url(../../assets/images/about-pets_320.png);
+            width: 260px;
+            height: 353.6px;
         }
 
         .shelter-desc-title {
@@ -731,6 +744,11 @@
             padding: 0 15px;
         }
 
+        .shelter-desc-text:last-child {
+            max-height: 239px;
+            margin-top: -3px;
+        }
+
         .pets:nth-last-child(2) {
             display: none;
         }
@@ -738,7 +756,7 @@
         .our-pets {
             flex-wrap: wrap;
             row-gap: 20px;
-            column-gap: 60px;
+            column-gap: 80px;
         }
 
         .pets-container {
@@ -750,7 +768,7 @@
         .section-title {
             font-size: 25px;
             text-align: center;
-            height: auto;
+            height: 64px;
         }
 
         .shelter-pets-container-main {
@@ -764,9 +782,14 @@
             gap: 42px;
         }
 
+        .help-title {
+            width: 250px;
+        }
+
         .help-container {
             gap: 30px;
             justify-content: flex-start;
+            padding: 0 5px;
         }
 
         .item-help-container {
@@ -778,6 +801,12 @@
         .help-item-title {
             font-size: 15px;
             line-height: 110%;
+            height: 17px;
+        }
+
+        .help-item-img {
+            width: 50px;
+            height: 50px;
         }
 
         .donation-img-container {
@@ -805,6 +834,7 @@
         .donation-card-label {
             font-size: 15px;
             letter-spacing: 0;
+            line-height: 160%;
         }
 
         .card-number {
@@ -836,7 +866,20 @@
         }
 
         .footer-info-container {
-            align-self: start;
+            align-self: center;
+            justify-content: flex-end;
+        }
+
+        .footer-locations .footer-info-container:last-child {
+            align-self: flex-start;
+        }
+
+        .footer-puppy-img{
+            display: none;
+        }
+
+        .footer-puppy-img-small {
+            display: inline;
         }
 
 
