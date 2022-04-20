@@ -76,7 +76,7 @@
     .mobile-menu-header {
         display: flex;
         justify-content: space-between;
-        padding: 30px 53px 158px 10px;
+        padding: 30px 53px 168px 10px;
         align-items: center;
     }
 
@@ -84,10 +84,10 @@
         list-style: none;
         text-align: center;
         padding: 0 39px;
-    }
-
-    .nav-item-mobile-menu {
-        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin: 0;
     }
 
     .nav-link-mobile-menu {
@@ -411,9 +411,10 @@
             align-items: center;
             padding: 30px 64px 0;
             flex-wrap: wrap;
-            justify-content: center;
             column-gap: 60px;
             row-gap: 65px;
+            justify-content: flex-start;
+
         }
 
         .footer-contacts-and-locations {
@@ -424,6 +425,10 @@
         .footer-locations {
         margin-top: 0;
         }
+
+        .footer-puppy-img {
+            margin: 0 auto;
+          }
     }
 
     @media only screen and (max-width: 767px) {
