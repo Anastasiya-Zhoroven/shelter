@@ -36,6 +36,69 @@
         align-items: center;
         justify-content: flex-end;
         padding: 60px 40px;
+        position: relative;
+    }
+
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 22px;
+        display: none;
+    }
+
+    .burger-menu:hover {
+        cursor: pointer;
+    }
+
+    .burger-menu.active + .mobile-menu {
+        display: block;
+     }
+
+    .burger-menu-item {
+        border-bottom: 2px solid #F1CDB3;
+    }
+
+    .burger-menu.active {
+        transform: rotate(90deg);
+    }
+
+    .mobile-menu {
+        background: #292929;
+        width: 320px;
+        height: 823px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+    }
+
+    .mobile-menu-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 53px 158px 10px;
+        align-items: center;
+    }
+
+    .nav-list-mobile-menu {
+        list-style: none;
+        text-align: center;
+        padding: 0 39px;
+    }
+
+    .nav-item-mobile-menu {
+        margin: 20px 0;
+    }
+
+    .nav-link-mobile-menu {
+        color: #FAFAFA;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 160%;
+        text-decoration: none;
     }
 
     .container-logo {
@@ -572,7 +635,7 @@
             width: 569px;
             height: 593px;
             background: url(../../assets/images/start-screen-puppy_768.png);
-            margin-left: calc(50% - 569px/2 + 70px);
+            margin-left: calc(50% - 569px/2 + 80px);
             align-self: auto;
         }
 
@@ -586,6 +649,10 @@
             
         }
 
+        .shelter-desc-title {
+            height: 90px;
+          }
+          
         .shelter-main-container .colored-btn {
             width: 207px;
             display: block;
@@ -613,6 +680,7 @@
 
         .uncolored-btn-pag {
             padding: calc(23px/2) 19px;
+            font-weight: 600;
         }
 
         .help-container {
@@ -660,7 +728,12 @@
         }
 
         .container-header {
-            padding: 30px 10px 60px 53px;
+            padding: 30px 53px 60px 10px;
+            justify-content: space-between;
+        }
+
+        .burger-menu {
+            display: flex;
         }
 
         .section-shelter-main {

@@ -35,6 +35,69 @@
         align-items: center;
         justify-content: flex-end;
         padding: 30px 40px;
+        position: relative;
+    }
+
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 22px;
+        display: none;
+    }
+
+    .burger-menu:hover {
+        cursor: pointer;
+    }
+
+    .burger-menu.active + .mobile-menu {
+        display: block;
+     }
+
+    .burger-menu-item {
+        border-bottom: 2px solid #000000;
+    }
+
+    .burger-menu.active {
+        transform: rotate(90deg);
+    }
+
+    .mobile-menu {
+        background: #F6F6F6;
+        width: 320px;
+        height: 823px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+    }
+
+    .mobile-menu-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 53px 158px 10px;
+        align-items: center;
+    }
+
+    .nav-list-mobile-menu {
+        list-style: none;
+        text-align: center;
+        padding: 0 39px;
+    }
+
+    .nav-item-mobile-menu {
+        margin: 20px 0;
+    }
+
+    .nav-link-mobile-menu {
+        color: #292929;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 160%;
+        text-decoration: none;
     }
 
     .container-header h1 {
@@ -373,7 +436,12 @@
         }
 
         .container-header {
-            padding: 30px 10px;
+            padding: 30px 50px 60px 10px;
+            justify-content: space-between;
+        }
+
+        .burger-menu {
+            display: flex;
         }
 
         .section-shelter-pets {
